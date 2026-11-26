@@ -13,16 +13,22 @@ public class Personagem {
 
 	public int receberDano(int quantidade) {
 
-
+		if (vidaAtual < 0) {
+			vidaAtual = 0;
+		}
+		
 		return vidaAtual -= quantidade;
 
 	}
 
 	public int curar(int quantidade) {
 
-
+		if (vidaAtual >= 200) {
+			return vidaAtual;
+		}
+		else {
 		return vidaAtual += quantidade;
-
+		}
 	}
 	
 	public int atacar(int poder){

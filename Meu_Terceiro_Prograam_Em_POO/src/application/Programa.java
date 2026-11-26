@@ -65,7 +65,7 @@ public class Programa {
 
 			}// fim do switch
 		
-		} while (player.vidaAtual != 0 && enemy.vidaAtual != 0);
+		} while (player.vidaAtual > 0 && enemy.vidaAtual > 0);
 
 		if (player.vidaAtual == 0) {
 			
