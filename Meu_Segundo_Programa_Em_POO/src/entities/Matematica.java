@@ -34,13 +34,14 @@ public class Matematica {
 	
 	public double divisao() {
 		
-		this.divisao = this.a / this.b;
 		
 		if (this.b == 0)
 			System.out.println("Espertinho... desta vez não");
 		
-		else
-		System.out.println(this.divisao);
+		else {		
+			this.divisao = this.a / this.b;
+
+		System.out.println(this.divisao);}
 		return 0;
 
 		
