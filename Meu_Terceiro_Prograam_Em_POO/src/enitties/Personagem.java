@@ -22,11 +22,16 @@ public class Personagem {
 	}
 
 	public int curar(int quantidade) {
+		
+		int pocao = 3;
 
-		if (vidaAtual >= 200) {
+		if (vidaAtual <= 200) {
 			return vidaAtual;
 		}
+		
 		else {
+		
+		pocao -= pocao ;
 		return vidaAtual += quantidade;
 		}
 	}
@@ -38,3 +43,4 @@ public class Personagem {
 	}
 
 }
+

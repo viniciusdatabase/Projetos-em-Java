@@ -13,7 +13,7 @@ public class Programa {
 		Scanner sc = new Scanner(System.in);
 		Locale.setDefault(Locale.US);
 
-		// *** VARIÁVEIS ***//
+		// *** VARIÁVEIS ***//meu jogo para o meu amigo
 
 		Inimigo enemy = new Inimigo();
 		Personagem player = new Personagem();
@@ -22,7 +22,7 @@ public class Programa {
 		// *** CÓDIGO ***//
 
 		System.out.println("Olá forasteiro, qual é o seu nome?");
-		player.nome = sc.next();
+		player.nome = sc.nextLine();
 		System.out.println(player.nome + " é? Parece que já ouvi este nome, eu devo te matar agora!");
 		System.out.println("*** SE PREPARE PARA A BATALHA ***");
 
@@ -46,12 +46,12 @@ public class Programa {
 				break;
 				
 			case 3:
-				player.curar(20);
+				player.curar(30);
 				player.receberDano(10);
 				break;
 
 			case 4:
-				enemy.receberDano(200);
+				enemy.receberDano(20);
 				player.receberDano(10);
 				break;
 				
@@ -80,9 +80,6 @@ public class Programa {
 			
 		}
 		
-		else
-			//vai fazer o que? :P
-
 		sc.close();
 
 	}
